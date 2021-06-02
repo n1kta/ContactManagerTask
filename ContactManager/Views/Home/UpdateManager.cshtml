@@ -1,0 +1,29 @@
+﻿@model ContactManager.MSSQL.Models.Manager
+
+<div class="d-flex justify-content-center pt-4">
+    <form asp-action="UpdateManager" asp-controller="Home" asp-route-id="@Model.Id">
+        <div class="form-group">
+            <label asp-for="Name" class="control-label">Name</label>
+            <input type="text" asp-for="Name" class="form-control" />
+        </div>
+        <div class="form-group">
+            <label asp-for="DateOfBirth" class="control-label">Date of birth</label>
+            <input type="date" asp-for="DateOfBirth" class="form-control" />
+        </div>
+        <div class="form-group">
+            <label asp-for="Married" class="control-label">Married</label>
+            <input type="checkbox" asp-for="Married" checke="@Model.Married" class="form-control" />
+        </div>
+        <div class="form-group">
+            <label asp-for="Phone" class="control-label">Phone</label>
+            <input type="text" asp-for="Phone" class="form-control" />
+        </div>
+        <div class="form-group">
+            <label asp-for="Salary" class="control-label">Salary</label>
+            <input type="text" asp-for="Salary" class="form-control" />
+        </div>
+        <div class="form-group">
+            <input type="submit" value="Update" class="btn btn-primary" />
+        </div>
+    </form>
+    </div>
